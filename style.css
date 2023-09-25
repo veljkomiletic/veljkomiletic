@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #logo {
+    width: 20%;
+    float: left;
+}
+nav {
+    width: 80%;
+    float: left;
+} */
+
+/* header */
+
+#logo img {
+    width: 75px;
+}
+header {
+    background: gray;
+    overflow: hidden;
+}
+.container {
+    width: 980px;   
+    margin: 0 auto;
+}
+#headerBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+/* section pozadina */
+
+#pozadina {
+    background: url(../img/123.jpg) no-repeat;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    color: white;
+    font-weight: bold;
+    background-size: cover;
+}
+
+/* galerija */
+
+#gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    text-align: center;
+    row-gap: 50px;
+    padding: 100px 0;
+}
+
+/* footer */
+
+footer {
+    background: gray;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: -5px;
+}
+
+
+@media only screen and (max-width: 576px) {
+    header {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+    #gallery {
+        display: block;
+    }
+    #gallery > div {
+        margin-bottom: 20px;
+    }
+  }
